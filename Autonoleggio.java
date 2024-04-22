@@ -25,7 +25,7 @@ public class Autonoleggio {
     for (Veicolo v : veicoli) {
       Auto u = (Auto) v;
       if (u instanceof Auto) {
-        if (u.nSeats == a) {
+        if (u.nPosti == a) {
           vs.add(u);
         }
       }
@@ -38,7 +38,7 @@ public class Autonoleggio {
     for (Veicolo v : veicoli) {
       Furgone f = (Furgone) v;
       if (f instanceof Furgone) {
-        if (f.load == a) {
+        if (f.carico == a) {
           vs.add(f);
         }
       }
